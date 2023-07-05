@@ -1,5 +1,5 @@
 function ruby_version_info() {
-  echo "%F{green}$(ruby -v | awk '{print $2}')%f"
+  echo "%F{green}$(asdf current | awk '{print $2}')%f"
 }
 
 setopt prompt_subst
