@@ -2,7 +2,7 @@
 
 1. Create Symlink
 ```console
-ln -s brooklyn.zsh-theme ~/.oh-my-zsh/themes/brooklyn.zsh-theme
+ln -s ~/custom_zsh_themes/brooklyn.zsh-theme ~/.oh-my-zsh/themes/brooklyn.zsh-theme
 ```
 
 2. Use Theme  
