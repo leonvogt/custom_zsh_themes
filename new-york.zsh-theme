@@ -1,5 +1,7 @@
 function ruby_version_info() {
-  echo "%F{green}$(asdf current | awk '{print $2}')%f"
+  adsf_output=$(asdf current)
+  ruby_version=$(echo "$adsf_output" | grep -E 'ruby' | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+')
+  echo "%F{green}$ruby_version%f"
 }
 
 setopt prompt_subst
